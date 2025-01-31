@@ -1,0 +1,191 @@
+:root {
+  line-height: 1.5;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --main-bg-color: #292D2E;
+  --main-bg-secondary: #323838;
+  --color-green: #24EE89;
+  --sidebar-bg-color: #222528;
+  --sidebar-header-color: #1b1d20;
+  --header-bg-color: #101013;
+  --nav-text-color: #a3a3b7;
+  --nav-text-color-hover: #6254ff;
+  /* --btn-primary: linear-gradient(180deg, #7848FF 0%, #6254FF 100%); */
+  --btn-primary: linear-gradient(to right, #6d3e18, #b98e44, #6d3e18);
+  --btn-primary-hover: linear-gradient(to right, #814d20, #d4a259, #814d20);
+  --theme-bg-light: rgba(3, 209, 255, 0.5);
+  --btn-secondary: #182a36;
+  --btn-text-color: #ffffff;
+  --footer-border: rgba(84, 97, 106, 0.3);
+  --theme-dark-bg: #141519;
+  --theme-dark-gold: #6d3e18;
+  --theme-light-gold: #b98e44;
+  --border-color: #4c4d4d;
+}
+
+body {
+  background-color: var(--main-bg-color) !important;
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'HellixRegular' !important;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+.header-menu li a {
+  color: #ffffff;
+  font-family: 'HellixSemiBold';
+}
+
+ul.header-menu li a.active {
+  color: var(--color-green) !important;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  color: var(--color-green) !important;
+}
+
+.bg-323838 {
+  background-color: #323838;
+}
+
+.tglr-btn {
+  background-color: #323838;
+}
+
+.nav-brder-btm {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.icon {
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: -0.125em;
+}
+
+.section-textbox>div {
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  padding: 6px 14px;
+  gap: 6px;
+  font-size: 16px;
+}
+
+.text-gradient {
+  background: -webkit-linear-gradient(90deg, #24EE89, #9FE871);
+  background: linear-gradient(90deg, #24EE89, #9FE871);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-text {
+  font-family: 'HellixSemiBold';
+  font-size: 32px;
+}
+
+
+/* Dark Theme Styles for Accordion */
+.accordion {
+  background-color: #121212;
+  border-radius: 8px;
+  border-radius: 8px;
+  padding: 40px 90px;
+  margin: 0px 90px;
+  border: 1px solid var(--border-color);
+}
+
+.accordion-item {
+  border: none;
+  margin-bottom: 10px;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.accordion-button {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border: none;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: left;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.accordion-button:after {
+  content: '\25BC';
+  /* Down arrow icon */
+  font-size: 1rem;
+  color: #ffffff;
+  margin-left: auto;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+}
+
+.accordion-button.collapsed:after {
+  transform: rotate(-90deg);
+}
+
+.accordion-body {
+  background-color: #1e1e1e;
+  color: #bfbfbf;
+  padding: 20px;
+  border-top: 1px solid #333333;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.accordion-item:last-child .accordion-body {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.slick-slide {
+  margin: 0 10px;
+}
+/* the parent */
+.slick-list {
+  margin: 0 -10px;
+}
+
+.accordion-button.collapsed:after {
+  transform: rotate(0deg);
+}
+.accordion-button:after {
+  content: "" ;
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
