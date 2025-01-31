@@ -92,4 +92,29 @@
     font-style: normal;
 }
 
+.hellix-100 {
+    font-family: 'HellixThin';
+}
+.hellix-300 {
+    font-family: 'HellixLight';
+}
+.hellix-400 {
+    font-family: 'HellixRegular';
+}
+.hellix-500 {
+    font-family: 'HellixMedium';
+}
+.hellix-600 {
+    font-family: 'HellixSemiBold';
+}
+.hellix-700 {
+    font-family: 'HellixBold';
+}
+.hellix-800 {
+    font-family: 'HellixExtraBold';
+}
+.hellix-900 {
+    font-family: 'HellixBlack';
+}
+
 

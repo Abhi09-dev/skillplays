@@ -5,6 +5,9 @@ import Header from './components/header'
 import Footer from './components/footer'
 import Faqs from './components/Faqs'
 import Testimonials from './components/Testimonials'
+import Banner from './components/Banner'
+import ExpSkill from './components/ExpSkill'
+import CreativeScreen from './components/CreativeScreen'
 
 
 function App() {
@@ -14,8 +17,11 @@ function App() {
     <>
       <Header />
       <div>
+        <Banner />
         <Testimonials />
         <Faqs />
+        <ExpSkill />
+        <CreativeScreen />
       </div>
       <Footer />
     </>
